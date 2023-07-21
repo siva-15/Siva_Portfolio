@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<title>
+Siva
+</title>
+<head><link rel="stylesheet" href="portfolio.css"></head>
+
+<body>
+    <div id="header"> 
+        <div class="container">    
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Conatct</a></li>
+            </ul>
+           
+        </nav>    
+        <div class="header-text">
+            <p>Aspiring Full-Stack Developer and Ethical Hacker in Training</p><br>
+            <h1> Hi, I'm <span>Devi Sri Venkata Siva D</span></h1>
+        </div>
+        </div>
+    </div>
+<!---about---->
+
+    <div id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img  src="Hello.jpg" alt="image">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Devoted and ambitious CSE undergraduate at GITAM University. Self-motivated learner with a focus on ethical hacking. Solid foundation in programming, networking, and computer systems. Interested in full-stack development. Committed to high ethical standards and staying updated in cybersecurity trends. Ready to make a positive impact in cybersecurity and web development.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>
+                              <div class="nested-list"><ul><li type="circle">JAVA</li>
+                                <li type="circle">C</li>
+                                <li type="circle">Python</li>
+                            </ul> </div> </li>
+                            <li><span>Technical Skills</span><br>
+                                <div class="nested-list"><ul><li type="circle">Data Structures and Algorithms
+                                   
+                                   
+                                    </li>
+                                  <li type="circle"> Linux</li>
+                                  <li type="circle"> Html, CSS, JavaScript</li>
+                                  <li type="circle"> SQL ,Python(Django Framework) ,Firebase,
+                                    AWS</li>
+                                    <li type="circle"> Computer Networks</li>
+                              </ul> </div> </li>
+                              <li><span>Tools</span><br>
+                                <div class="nested-list"><ul><li type="circle">Github</li>
+                                  <li type="circle">Burpsuite</li>
+                                  <li type="circle"> Apache JMeter</li>
+                              </ul> </div> </li>      
+                            </div>
+                        </ul>
+
+
+                        <div class="tab-contents active-tab" id="experience">
+                            <ul>
+                                <li>Intern at 
+                                    PLUMSOFT Pvt.Limited Hyderabad
+                                   </li>
+                                    <li>
+                                        Web
+                                        Development Intern  at 
+                                        Teachnook
+                                        </li>
+                                        <li>Edu
+                                            Skills 
+                                            cybersecurity
+                                            intern</li>
+                            </ul></div>
+                            <div class="tab-contents active-tab" id="education">
+                                
+                                <ul>
+                                    <li>Btech
+                                        ,
+                                        Computer
+                                        Science
+                                        Engineering,
+                                        Gandhi
+                                        Institute
+                                        Of
+                                        Technology
+                                        And
+                                        Management
+                                    </li>
+                                        <li>
+                                            Intermediate
+                                            ,
+                                            MPC,
+                                            Narayana
+                                            junior
+                                            college
+                                        </li>
+                                            <li>
+                                               X<sup>th</sup> CBSE,
+St.john’s
+School
+                                            </li>
+                                </ul>
+                                </div>
+    
+                              
+                    
+
+                          
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for (tablink of tablinks){
+
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+
+                tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add('active-tab');
+
+        }
+
+    
+    </script>
+    
+</body>
+
+
+
+
+</html>
